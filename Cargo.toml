@@ -1,0 +1,15 @@
+[package]
+name = "bore-rust"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+debug = true
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+twilight-gateway = "=0.17.1"
+twilight-model = "=0.17.1"
+twilight-cache-inmemory = "=0.17.1"
+twilight-http = "=0.17.1"
+sqlx = { version = "0.8", default-features = false, features = ["postgres", "runtime-tokio-rustls"] }
